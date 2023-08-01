@@ -14,6 +14,8 @@
 #SBATCH --partition=gpu         # Specifies the GPU partition
 #SBATCH --gpus=a100:1           # Assigns 1 A100 GPU for the job
 #SBATCH --time=00:30:00         # Sets a time limit of 30 minutes for the job
+#SBATCH --qos=uf-iccc -b
+
 
 module purge                    # Removes all currently loaded modules to ensure a clean environment
 
@@ -26,5 +28,5 @@ source myenv/bin/activate       # Activates the created virtual environment
 pip install torch torchvision matplotlib
 # Uses pip to install the necessary Python packages in the virtual environment
 
-srun python ex.py               # Executes the Python script named "ex.py" using the srun command
+srun python modelTrainGPU.py               # Executes the Python script named "modelTrainGPU.py" using the srun command
 
