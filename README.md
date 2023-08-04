@@ -15,4 +15,5 @@ This Reposiroty talks about the implementation of model training under different
 6. Model Train in Single-Threaded Fashion
 
 7. Model Train using Spark
-  
+
+8. SLURM Commands to control the life cycle of jobs submitted to HiperGator
