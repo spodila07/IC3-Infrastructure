@@ -42,11 +42,3 @@ SLURM (Simple Linux Utility for Resource Management) is a workload manager used 
 10.'sreport' command in SLURM allows you to generate various reports using the accounting data stored within the system. It provides insights into the cluster's utilization, user activities, and more. You can customize the report by using different options and filters
 
   Example: `sreport user top Usage Start=lastmonth`
-
-
-
-If you have access to a system where slurmInfo is available, you may check its usage and functionality by running it in the terminal or using the --help option if available. For example:
-
-These commands allow you to interact with the SLURM scheduler, submit jobs, check job status, and perform various actions related to job management and cluster information.
-
-Please note that the specific SLURM commands available may vary depending on your cluster setup and the version of SLURM being used. It's always a good idea to consult the cluster documentation or administrators for cluster-specific details and best practices.
